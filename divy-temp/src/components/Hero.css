@@ -1,0 +1,83 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 60px 5%;
+  background-color: white;
+}
+
+.hero-contenido {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-family: 'Mignone', serif;
+  font-size: clamp(40px, 5vw, 76px);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 25px;
+  color: rgba(57, 57, 57, 1);
+}
+
+.hero h1 span {
+  color: #2448ff;
+}
+
+.hero p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+.hero-boton {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #2448ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+
+.hero-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+
+  width: 50%;
+  height: 350px;
+}
+
+.hero-imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto-cena {
+  border-radius: 60px 0 0 0;
+}
+
+.forma-verde-superior,
+.forma-verde-inferior {
+  background-color: #C7FF50;
+}
+
+.forma-verde-inferior {
+  border-radius: 0 0 0 60px;
+}
+
+.forma-circulo {
+  background-color: #2448FF;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.foto-billetera {
+  border-radius: 70px;
+}
