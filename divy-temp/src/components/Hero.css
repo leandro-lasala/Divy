@@ -1,19 +1,21 @@
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 60px;
   width: 100%;
-  padding: 60px 5%;
+  padding: 150px 5% 60px;
   background-color: white;
 }
 
 .hero-contenido {
   max-width: 650px;
+  text-align: left;
 }
 
 .hero h1 {
   font-family: 'Mignone', serif;
-  font-size: clamp(40px, 5vw, 76px);
+  font-size: clamp(36px, 3.5vw, 56px);
   font-weight: 400;
   line-height: 1.1;
   margin: 0 0 25px;
@@ -21,7 +23,7 @@
 }
 
 .hero h1 span {
-  color: #2448ff;
+  color: #1E48F6;
 }
 
 .hero p {
@@ -33,13 +35,22 @@
 }
 
 .hero-boton {
-  display: inline-block;
-  padding: 14px 28px;
-  background-color: #2448ff;
-  color: white;
+ display: inline-block;
+  padding: 10px 35px;
+
+  background-color: white;
+  color: #111;
+
+  border: 4px solid #C7FF50;
+  border-radius: 15px;
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
   text-decoration: none;
-  border-radius: 30px;
-  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 10px 0 #D0FE53;
 }
 
 
@@ -47,15 +58,17 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 12px;
+  gap: 10px;
 
-  width: 50%;
-  height: 350px;
+  width: 480px;
+  height: 300px;
+  flex-shrink: 0;
 }
 
 .hero-imagenes img {
   width: 100%;
   height: 100%;
+  min-height: 0;
   object-fit: cover;
 }
 
@@ -65,19 +78,27 @@
 
 .forma-verde-superior,
 .forma-verde-inferior {
-  background-color: #C7FF50;
+  background-color: #D0FE53;
+}
+  
+.forma-verde-superior{
+  border-radius: 40px 0 0 0;
+}
+
+.foto-valija {
+  border-radius: 0 40px 0 40px;
 }
 
 .forma-verde-inferior {
-  border-radius: 0 0 0 60px;
+  border-radius: 0 0 0 40px;
 }
 
 .forma-circulo {
-  background-color: #2448FF;
+  background-color: #1E48F6;
   border-radius: 50%;
   aspect-ratio: 1;
 }
 
 .foto-billetera {
-  border-radius: 70px;
+  border-radius: 0 40px 100px 100px ;
 }
