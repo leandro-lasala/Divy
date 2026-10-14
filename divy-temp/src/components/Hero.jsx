@@ -2,6 +2,7 @@ import './Hero.css'
 import fotoCena from '../assets/images/cena.png'
 import fotoValija from '../assets/images/valija.png'
 import fotoBilletera from '../assets/images/billetera.png'
+import { Link } from 'react-router'
 
 function Hero(){
     return(
@@ -10,7 +11,7 @@ function Hero(){
             <h1>con <span>Diby</span> es muy facil dividir gastos :)</h1>
             <p>Registrá tus gastos, dividilos entre quienes participaron y sabé en segundos cuánto tiene que pagar o recibir cada persona.</p>
 
-            <a href="#inicio" className="hero-boton">Descargar App</a>
+            <Link to="/demo" className="hero-boton">Probá Divy</Link>
         </div>
 
         <div className="hero-imagenes">

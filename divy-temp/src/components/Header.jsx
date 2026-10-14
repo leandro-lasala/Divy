@@ -1,5 +1,6 @@
 import isotipo from '../assets/images/isotipo.svg';
 import './Header.css';
+import { Link } from 'react-router'
 
 
 function Header() {
@@ -12,13 +13,11 @@ function Header() {
             <nav className="nav">
                 <a href="#inicio">Inicio</a>
                 <a href="#beneficios">Beneficios</a>
-                <a href="#usos">Usos</a>
+                <Link to="/demo">Probá Divy</Link>
                 <a href="#como-funciona">Cómo funciona</a>
                 <a href="#descargar">Descargar</a>
             </nav>
         </header>
-
-        
 
     );
 }
