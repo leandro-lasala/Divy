@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pizza",
+    "categoria": "Comida",
+    "precio": 15000
+  },
+  {
+    "id": 2,
+    "nombre": "Gaseosa",
+    "categoria": "Bebida",
+    "precio": 4000
+  },
+  {
+    "id": 3,
+    "nombre": "Helado",
+    "categoria": "Postre",
+    "precio": 8000
+  },
+  {
+    "id": 4,
+    "nombre": "Papas fritas",
+    "categoria": "Comida",
+    "precio": 6000
+  },
+  {
+    "id": 5,
+    "nombre": "Café",
+    "categoria": "Bebida",
+    "precio": 4500
+  },
+  {
+    "id": 6,
+    "nombre": "Hamburguesa",
+    "categoria": "Comida",
+    "precio": 12000
+  }
+]

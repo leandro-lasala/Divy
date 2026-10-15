@@ -1,0 +1,40 @@
+.gasto-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 12px;
+  border-bottom: 1px solid #e8e8e8;
+  cursor: pointer;
+  text-align: left;
+}
+
+.gasto-item:last-child {
+  border-bottom: none;
+}
+
+.gasto-item input {
+  width: 20px;
+  height: 20px;
+  accent-color: #2459e0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.gasto-nombre {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.gasto-precio {
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (hover: hover) {
+  .gasto-item:hover {
+    background-color: #f5f7ff;
+    border-radius: 10px;
+  }
+}

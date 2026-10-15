@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 0px 30px;
+  background-color: white;
+}
+
+.header-logo {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-logo img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 8px 38px;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+
+.nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}

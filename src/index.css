@@ -1,0 +1,45 @@
+
+/* Helvetica Neue Regular */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HelveticaNeue-Roman.otf');
+  font-weight: 400;
+}
+
+/* Helvetica Neue Medium */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HelveticaNeue-Medium.otf');
+  font-weight: 500;
+}
+
+/* Helvetica Neue Bold */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HelveticaNeue-Bold.otf');
+  font-weight: 700;
+}
+
+/* Mignone */
+@font-face {
+  font-family: 'Mignone';
+  src: url('./assets/fonts/Mignone.ttf');
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  /* border:solid 1px red; */
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  
+}
+
+
+
+button {
+  cursor: pointer;
+}
