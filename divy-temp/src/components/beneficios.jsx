@@ -32,23 +32,40 @@ const beneficios = [
 function Beneficios() {
   return (
     <section className="beneficios">
-      <h2 className="beneficios-titulo">
-        Para compartir, no importa el plan.
-      </h2>
+      <div className="beneficios-contenedor">
+        <h2 className="beneficios-titulo">
+          Para compartir, no importa el plan.
+        </h2>
 
-      <div className="beneficios-lista">
-        {beneficios.map((beneficio) => (
-          <article className="beneficio" key={beneficio.titulo}>
-            <h3>{beneficio.titulo}</h3>
+        <p className="beneficios-subtitulo">
+          Hay muchas formas de compartir. Divy te ayuda a organizar
+          los gastos para que disfrutes de cada momento.
+        </p>
 
-            <p>{beneficio.descripcion}</p>
+        <div className="beneficios-grid">
+          {beneficios.map((beneficio) => (
+            <article
+              className="beneficio-card"
+              key={beneficio.titulo}
+            >
+              <div className="beneficio-imagen-contenedor">
+                <img
+                  className="beneficio-imagen"
+                  src={beneficio.imagen}
+                  alt={beneficio.titulo}
+                />
+              </div>
 
-            <img
-              src={beneficio.imagen}
-              alt={beneficio.titulo}
-            />
-          </article>
-        ))}
+              <h3 className="beneficio-titulo">
+                {beneficio.titulo}
+              </h3>
+
+              <p className="beneficio-descripcion">
+                {beneficio.descripcion}
+              </p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

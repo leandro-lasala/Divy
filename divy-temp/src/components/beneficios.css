@@ -1,74 +1,211 @@
 
+@font-face {
+  font-family: "Mignone";
+  src: url("/fonts/Mignone.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 .beneficios {
   width: 100%;
-  padding: 45px 20px;
+  padding: 80px 6%;
   background-color: #ffffff;
-  font-family: Arial, sans-serif;
-  color: #3d3d3d;
+  color: #252525;
+  font-family: "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
 
-.beneficios-titulo {
-  margin: 0 0 36px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.3;
+.beneficios *,
+.beneficios *::before,
+.beneficios *::after {
+  box-sizing: border-box;
 }
 
-.beneficios-lista {
+.beneficios-contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =================================
+   TÍTULOS
+================================= */
+
+.beneficios-titulo {
+  margin: 0 auto 20px;
+  max-width: 850px;
+
+  font-family: "Mignone", serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-align: center;
+
+  color: #252525;
+}
+
+.beneficios-subtitulo {
+  max-width: 600px;
+  margin: 0 auto 55px;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: center;
+
+  color: #666666;
+}
+
+
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px 24px;
+  align-items: stretch;
+}
+
+
+.beneficio-card {
+  min-width: 0;
+  padding: 0;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 21px;
+  align-items: flex-start;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+
+  transition: transform 0.3s ease;
 }
 
-.beneficio {
+.beneficio-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =================================
+   IMÁGENES
+================================= */
+
+.beneficio-imagen-contenedor {
   width: 100%;
-  max-width: 250px;
-  text-align: center;
+  height: 230px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  border-radius: 14px;
+  background-color: #f4f0eb;
 }
 
-.beneficio h3 {
-  margin: 0 0 2px;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.beneficio p {
-  margin: 0 0 7px;
-  font-size: 10px;
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-.beneficio img {
+.beneficio-imagen {
   display: block;
   width: 100%;
-  height: 27px;
+  height: 100%;
+
   object-fit: cover;
-  border-radius: 30px;
+  object-position: center;
+
+  transition: transform 0.4s ease;
 }
 
-@media (max-width: 480px) {
+.beneficio-card:hover .beneficio-imagen {
+  transform: scale(1.04);
+}
+
+/* =================================
+   TEXTOS DE LAS TARJETAS
+================================= */
+
+.beneficio-titulo {
+  margin: 0 0 10px;
+
+  font-family: "Mignone", serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.2;
+
+  color: #252525;
+}
+
+.beneficio-descripcion {
+  margin: 0;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: #666666;
+}
+
+/* =================================
+   TABLETS
+================================= */
+
+@media (max-width: 900px) {
   .beneficios {
-    padding: 35px 16px;
+    padding: 65px 5%;
+  }
+
+  .beneficios-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 22px;
+  }
+
+  .beneficio-imagen-contenedor {
+    height: 220px;
+  }
+
+  .beneficio-titulo {
+    font-size: 28px;
+  }
+}
+
+/* =================================
+   CELULARES
+================================= */
+
+@media (max-width: 550px) {
+  .beneficios {
+    padding: 50px 22px;
   }
 
   .beneficios-titulo {
-    font-size: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+    font-size: 39px;
+    letter-spacing: -0.5px;
   }
 
-  .beneficios-lista {
-    gap: 24px;
+  .beneficios-subtitulo {
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 1.7;
   }
 
-  .beneficio {
-    max-width: 300px;
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
-  .beneficio p {
-    font-size: 11px;
+  .beneficio-imagen-contenedor {
+    height: 240px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+  }
+
+  .beneficio-titulo {
+    margin-bottom: 8px;
+    font-size: 29px;
+  }
+
+  .beneficio-descripcion {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
