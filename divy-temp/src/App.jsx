@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Demo from './paginas/Demo.jsx'
+import Beneficios from './components/beneficios.jsx'
 
 function App() {
   return(
@@ -15,6 +16,7 @@ function App() {
           element={
             <>
               <Hero />
+              <Beneficios/>
             </>
           }
         />
