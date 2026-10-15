@@ -1,86 +1,104 @@
-
-@font-face {
-  font-family: "Mignone";
-  src: url("/fonts/Mignone.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
 .beneficios {
   width: 100%;
-  padding: 45px 20px;
+  padding: 40px 20px 55px;
   background-color: #ffffff;
-  font-family: 'Helvetica Neue', sans-serif;
   color: #3d3d3d;
-  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.beneficios-contenedor {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 .beneficios-titulo {
-  margin: 0 0 36px;
-  text-align: center;
-  font-family: 'Mignone', serif;
-  font-size: 20px;
+  margin: 0 0 46px;
+  color: #3d3d3d;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
-.beneficios-lista {
+.beneficios-subtitulo {
+  display: none;
+}
+
+.beneficios-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 21px;
+  gap: 29px;
 }
 
-.beneficio {
+.beneficio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 250px;
-  text-align: center;
+  max-width: 330px;
 }
 
-.beneficio h3 {
+.beneficio-titulo {
+  order: 1;
   margin: 0 0 2px;
-  font-family: 'Mignone', serif;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.beneficio p {
-  margin: 0 0 7px;
+  color: #3d3d3d;
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 10px;
-  line-height: 1.4;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.beneficio img {
+.beneficio-descripcion {
+  order: 2;
+  margin: 0 0 8px;
+  color: #3d3d3d;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.beneficio-imagen-contenedor {
+  order: 3;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.beneficio-imagen {
   display: block;
   width: 100%;
-  height: 27px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 30px;
 }
 
 @media (max-width: 480px) {
   .beneficios {
-    padding: 35px 16px;
+    padding: 35px 16px 45px;
   }
 
   .beneficios-titulo {
-    font-size: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
+    font-size: 24px;
   }
 
-  .beneficios-lista {
-    gap: 24px;
+  .beneficios-grid {
+    gap: 25px;
   }
 
-  .beneficio {
-    max-width: 300px;
+  .beneficio-card {
+    max-width: 330px;
   }
 
-  .beneficio p {
-    font-size: 11px;
+  .beneficio-titulo {
+    font-size: 17px;
+  }
+
+  .beneficio-descripcion {
+    font-size: 13px;
   }
 }

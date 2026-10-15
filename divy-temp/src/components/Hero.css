@@ -102,3 +102,65 @@
 .foto-billetera {
   border-radius: 0 40px 100px 100px ;
 }
+
+@media (max-width: 900px) {
+  .hero {
+    gap: 36px;
+    padding: 100px 5% 50px;
+  }
+
+  .hero-contenido {
+    max-width: 480px;
+  }
+
+  .hero-imagenes {
+    width: min(42vw, 380px);
+    height: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    gap: 42px;
+    padding: 70px 24px 45px;
+    text-align: center;
+  }
+
+  .hero-contenido {
+    max-width: 560px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 10vw, 48px);
+    margin-bottom: 18px;
+  }
+
+  .hero p {
+    max-width: 460px;
+    margin: 0 auto 26px;
+    font-size: 16px;
+  }
+
+  .hero-imagenes {
+    width: min(100%, 480px);
+    height: min(62vw, 300px);
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    gap: 34px;
+    padding: 50px 16px 35px;
+  }
+
+  .hero-boton {
+    padding: 9px 26px;
+    font-size: 16px;
+  }
+
+  .hero-imagenes {
+    gap: 6px;
+    height: 220px;
+  }
+}

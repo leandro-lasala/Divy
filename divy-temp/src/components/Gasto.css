@@ -38,3 +38,20 @@
     border-radius: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .gasto-item {
+    gap: 10px;
+    padding: 16px 8px;
+  }
+
+  .gasto-item input {
+    width: 18px;
+    height: 18px;
+  }
+
+  .gasto-nombre,
+  .gasto-precio {
+    font-size: 14px;
+  }
+}

@@ -4,7 +4,7 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  padding: 0px 30px;
+  padding: 30px 30px;
   background-color: white;
 }
 
@@ -36,4 +36,46 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 20px 16px;
+  }
+
+  .header-logo {
+    left: 16px;
+  }
+
+  .nav {
+    gap: 18px;
+    padding: 8px 20px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    justify-content: flex-end;
+    padding: 16px;
+  }
+
+  .header-logo {
+    left: 16px;
+  }
+
+  .nav {
+    justify-content: flex-end;
+    gap: 10px 14px;
+    width: calc(100% - 48px);
+    padding: 8px 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    font-size: 11px;
+  }
 }
