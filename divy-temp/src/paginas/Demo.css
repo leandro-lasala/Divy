@@ -10,7 +10,7 @@ body{
 
 .demo {
   min-height: 100vh;
-  background-color: #f8f9f6;
+  background-color: #ffffff;
   padding: 80px 24px;
 }
 
@@ -18,7 +18,7 @@ body{
   font-size: clamp(36px, 5vw, 64px);
   text-align: center;
   font-family: 'Mignone', serif;
-  color: #2459e0;
+  color: #1E48F6;
   margin-bottom: 12px;
 }
 
@@ -49,7 +49,7 @@ body{
 }
 
 .demo-resumen {
-  background-color: #2459e0;
+  background-color: #1E48F6;
   color: white;
 }
 
@@ -70,7 +70,7 @@ body{
 }
 
 .demo-resultado {
-  background-color: #c7ff50;
+  background-color: #D0FE53;
   color: #17213b;
   padding: 24px;
   border-radius: 16px;
@@ -96,7 +96,7 @@ body{
   margin: 0 auto 24px;
   text-align: left;
 
-  color: #2459e0;
+  color: #1E48F6;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
