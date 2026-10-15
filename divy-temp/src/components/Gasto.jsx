@@ -1,15 +1,22 @@
+import './Gasto.css'
+
 function Gasto({ gasto, seleccionado, onSeleccionar }) {
   return (
-    <div>
+    <label className="gasto-item">
       <input
         type="checkbox"
         checked={seleccionado}
         onChange={onSeleccionar}
       />
 
-      <h3>{gasto.nombre}</h3>
-      <p>Precio: ${gasto.precio}</p>
-    </div>
+      <span className="gasto-nombre">
+        {gasto.nombre}
+      </span>
+
+      <span className="gasto-precio">
+        ${gasto.precio.toLocaleString('es-AR')}
+      </span>
+    </label>
   )
 }
 
