@@ -8,7 +8,7 @@ function Hero(){
     return(
     <section className="hero" id="inicio">
         <div className="hero-contenido" >
-            <h1>con <span>Diby</span> es muy facil dividir gastos :)</h1>
+            <h1>con <span>Divy</span> es muy facil dividir gastos :)</h1>
             <p>Registrá tus gastos, dividilos entre quienes participaron y sabé en segundos cuánto tiene que pagar o recibir cada persona.</p>
 
             <Link to="/demo" className="hero-boton">Probá Divy</Link>
